@@ -15,7 +15,7 @@ export default (fixture, options = {}) => {
         {
           test: /\.js$/,
           use: {
-            loader: path.resolve(__dirname, '../src/eslint-loader.js'),
+            loader: path.resolve(__dirname, '../src/eslint-disable-loader.js'),
           }
         }
       ]

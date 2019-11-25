@@ -1,7 +1,4 @@
-import { getOptions } from 'loader-utils';
-
-export default function loader(source) {
-  const options = getOptions(this);
+module.exports = function(source) {
   let result = addEslintToJsFile(source, this.resourcePath)
   return result
 }

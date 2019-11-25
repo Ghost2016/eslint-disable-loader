@@ -1,6 +1,6 @@
 {
   "name": "eslint-disable-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "patch eslint-disable to js files",
   "main": "src/eslint-disable-loader.js",
   "directories": {},

@@ -4,9 +4,10 @@ module.exports = function(source) {
 }
 
 /**
- * @description 给js文件添加eslint-disable
- * @param {String} fileStr 文件内容
- * @param {String} fileStr 文件路径
+* @description add [/[*] eslint-disable [*]/] to javascript file
+ * @param {String} fileStr file content before
+ * @param {String} fileStr file path
+ * @return {String} file content after 
  */
 function addEslintToJsFile(fileStr, fileUrl) {
   const existRegex = new RegExp('\/[*] eslint\-disable [*]\/\n', 'g')
